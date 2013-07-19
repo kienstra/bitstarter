@@ -4,7 +4,7 @@ var fs = require('fs');
 var random = fs.readFileSync('index.html')
 
 
-//var here = buf.toString();
+buffed = random.toString();
 
 var app = express.createServer(express.logger());
 
