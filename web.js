@@ -9,7 +9,7 @@ var here = buf.toString(fs.readFileSync('/bitstarter/index.html', function (err,
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('here');
+  response.send(here);
 });
 
 var port = process.env.PORT || 5000;
