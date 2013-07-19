@@ -7,12 +7,12 @@ var buf = fs.readFileSync('index.html', function (err, data) {
 }));
 
 
-var here = buf.toString();
+//var here = buf.toString();
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(here);
+  response.send('here');
 });
 
 var port = process.env.PORT || 5000;
