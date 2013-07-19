@@ -1,10 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 
-var random = fs.readFileSync('/bitstarter/index.html', function (err, data) {
-  if (err) throw err;
-  console.log(data);
-}));
+var random = fs.readFileSync('index.html')
 
 
 //var here = buf.toString();
