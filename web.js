@@ -9,7 +9,7 @@ buffed = random.toString();
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('here');
+  response.send(buffed);
 });
 
 var port = process.env.PORT || 5000;
