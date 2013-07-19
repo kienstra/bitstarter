@@ -9,7 +9,7 @@ var here = buf.toString(fs.readFileSync('index.html', function (err, data) {
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buf.toString(fs.readFileSync('index.html')));
+  response.send('here is the index.html');
 });
 
 var port = process.env.PORT || 5000;
