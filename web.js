@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 
-var buf = fs.readFileSync('/bitstarter/index.html', function (err, data) {
+var buf = fs.readFileSync('index.html', function (err, data) {
   if (err) throw err;
   console.log(data);
 });
