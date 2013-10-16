@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 
-var random = fs.readFileSync('index.html')
+var random = fs.readFileSync('index2.html')
 
 
 buffed = random.toString();
