@@ -9,7 +9,7 @@ buffed = random.toString();
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send("Hello WHIRGIG"); //used to be buffed;
+  response.send(buffed); //used to be buffed;
 })
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
