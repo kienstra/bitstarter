@@ -11,7 +11,7 @@ app.get('/', function(request, response) {
   response.send(buffed);
 });
 
-var port = process.env.PORT || 8080;// used to be 5000: 8080 is a public port
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
