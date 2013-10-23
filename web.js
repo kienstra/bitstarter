@@ -3,7 +3,6 @@ var fs = require('fs');
 
 
 var random = fs.readFileSync('index.html');
-var random = fs.readFileSync('index.html');
 
 var buffed = random.toString();
 
@@ -21,7 +20,3 @@ app.listen(port, function() {
 
 });
 
-var port = process.env.PORT || 8080;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
